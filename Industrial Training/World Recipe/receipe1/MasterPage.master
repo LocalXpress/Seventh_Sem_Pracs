@@ -1,0 +1,72 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="Style.css" rel="stylesheet" /> 
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+     <!-- header begin -->
+<nav class="navbar navbar-light" style="background-color:  #ffad33;">
+  <div class="container-fluid">
+  <div class="navbar-header">
+  <a class="navbar-brand" href="#" style="padding-top:2px">
+        <img alt="Brand" style="width:auto;height:3em; "src="logo.png">
+      </a>
+</div>
+ <div class="navbar-header">
+      <a class="navbar-brand" href="#">Food Recipe</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.aspx">Home</a></li>
+	   <li class="disabled"><a href="Chinese Food">Chinese Food</a></li>
+	   <li class="disabled"><a href="">French Foods</a></li>
+	  <li class="active"><a href="Indian Foods.aspx">Indian Foods</a></li>
+	  <li class="disabled"><a href="">Italian Food</a></li>
+	  <li class="disabled"><a href="">Mexican Food</a></li>
+	   <li class="disabled"><a href="">Thailand Food</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+      <li><a href="Admin.aspx"><span class="glyphicon glyphicon-Upload"></span> Upload Recipe</a></li>
+    </ul>
+  </div>  
+</nav>
+  
+<!-- header end -->
+
+ <div>
+    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+   
+ </div>
+
+
+
+    
+<!-- footer starts   -->
+  
+ <footer class="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+<div class=" wrap flinks" align="center">
+<p>
+<a  href="Privacy Policy.aspx">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a  href="Contact Us.aspx">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;<a  href="Disclaimer.aspx">Disclaimer</a>
+</p>
+</div>
+<div class="wrap flinks" align="center">
+<p>Copyright 2016 &copy; &nbsp; &middot; <a><strong> Food Mood </strong></a>&nbsp; &middot; All Rights Reserved.</p>
+</div> 
+<script type='text/javascript'>
+</script>
+</footer>
+<!--footer end -->
+</body>
+</html>
