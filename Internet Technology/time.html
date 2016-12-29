@@ -1,0 +1,9 @@
+<script>
+var seconds_left = (10*60);
+var interval = setInterval(function() {
+
+    document.getElementById('timer_div').innerHTML =Math.floor((--seconds_left)/60)+" : "+(seconds_left%60);
+
+}, 1000);
+</script>
+<p id='timer_div'style="float: center; font-size: 500px;"></p>
